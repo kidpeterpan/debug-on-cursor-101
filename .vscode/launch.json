@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Go Program with Env", // Give it a descriptive name
+      "type": "go",
+      "request": "launch",
+      "mode": "auto", // Or "debug" if you explicitly want debug mode
+      "program": "${workspaceFolder}", // Path to your main package
+      // Or if your main.go is in a subfolder like cmd/app:
+      // "program": "${workspaceFolder}/cmd/app",
+      "envFile": "${workspaceFolder}/.env", // <-- This injects your .env variables
+      "console": "integratedTerminal" // Debug output in the VS Code terminal
+    }
+  ]
+}
