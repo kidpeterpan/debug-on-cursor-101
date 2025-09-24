@@ -9,6 +9,9 @@
       "program": "${workspaceFolder}", // Path to your main package
       // Or if your main.go is in a subfolder like cmd/app:
       // "program": "${workspaceFolder}/cmd/app",
+      "env": { // default export env
+          "APP_ENV": "local", 
+      }, 
       "envFile": "${workspaceFolder}/.env", // <-- This injects your .env variables
       "console": "integratedTerminal" // Debug output in the VS Code terminal
     }
