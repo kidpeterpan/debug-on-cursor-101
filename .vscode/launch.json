@@ -6,7 +6,7 @@
       "type": "go",
       "request": "launch",
       "mode": "auto", // Or "debug" if you explicitly want debug mode
-      "program": "${workspaceFolder}", // Path to your main package
+      "cwd": "${workspaceFolder}", // init current working directory
       // Or if your main.go is in a subfolder like cmd/app:
       // "program": "${workspaceFolder}/cmd/app",
       "env": { // default export env
